@@ -28,26 +28,44 @@ const Header = () => {
           </Link>
             {( isMarketsSelected &&
             <div className="options">
-              <p className="mx-4 my-3">Market is up by {percenatge} in the last 24 hours.</p>
+              <p className="mx-4 my-3">Market is up by {percenatge} in</p>
+              <p className="mx-4 my-3">the last 24 hours.</p>
+
               <div className="option-item">
               <FontAwesomeIcon icon={faBullseye} />
-                <Link to={"/"} className="header-link">Opportunities</Link>
+                <Link to={"/"} className="header-link">
+                  <p>Opportunities</p>
+                    <span>Timely seizes new market opportunities</span>
+                </Link>
               </div>
               <div className="option-item">
-                <FontAwesomeIcon icon={faChartSimple} /><Link to={"/"} className="header-link">Markets</Link>
+                <FontAwesomeIcon icon={faChartSimple} /><Link to={"/"} className="header-link">
+                <p>Markets</p>
+                <span>View the latest crypto prices and volume</span>
+              </Link>
               </div>
               <div className="option-item">
-                <FontAwesomeIcon icon={faComputer} /><Link to={"/"} className="header-link">Market Data</Link>
+                <FontAwesomeIcon icon={faComputer} /><Link to={"/"} className="header-link">
+                <p>Market Data</p>
+                <span>Latest market data</span>
+              </Link>
               </div>
               <div className="option-item">
-                <FontAwesomeIcon icon={faWallet} /><Link to={"/"} className="header-link">Insights</Link>
+                <FontAwesomeIcon icon={faWallet} /><Link to={"/"} className="header-link">
+                <p>Insights</p>
+                <span>Insights from experts</span>
+              </Link>
               </div>
               <div className="option-item">
-                <FontAwesomeIcon icon={faNewspaper} /><Link to={"/"} className="header-link">News</Link>
+                <FontAwesomeIcon icon={faNewspaper} /><Link to={"/"} className="header-link">
+                <p>News</p>
+                <span>Latest media articles</span>
+              </Link>
               </div>
             </div>
               )}
           </div>
+
           <Link to={"/"} className="header-link">Trade</Link>
           <Link to={"/"} className="header-link">Copy</Link>
           <Link to={"/"} className="header-link">Bots</Link>
